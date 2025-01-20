@@ -8,8 +8,13 @@ dependencies = [
     "matplotlib",
     "numpy<2",
     "opencv-python",
-    "streamlit>=1.41.1", 
-    
+    "streamlit>=1.41.1",
+    "tensorflow==2.15.0",
+]
+
+[tool.uv.sources]
+tensorflow = [
+    { index = "tensorflow-cpu", marker = "platform_system == 'Windows'" },
 ]
 
 [project.scripts]
